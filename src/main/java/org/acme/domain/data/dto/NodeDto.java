@@ -5,7 +5,7 @@ public class NodeDto {
     NodeDto left;
     NodeDto right;
 
-    public NodeDto(int value){
+    NodeDto(int value){
         this.value = value;
         right = null;
         left = null;

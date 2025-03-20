@@ -13,6 +13,13 @@ public class GreetingResource {
     @Inject
     BinaryTreeServicePort binaryTreeServicePort;
 
+    @Path("/test")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public String greets(){
+        return "Hello World!";
+    }
     private static final Logger LOG = Logger.getLogger(String.valueOf(GreetingResource.class));
     @GET
     @Consumes(MediaType.APPLICATION_JSON)
